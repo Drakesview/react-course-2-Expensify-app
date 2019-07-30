@@ -8,7 +8,9 @@
     "build:dev": "webpack",
     "server": "live-server public",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json"
+    "test": "jest --config=jest.config.json",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +30,7 @@
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "enzyme-to-json": "^3.0.1",
+    "express": "^4.17.1",
     "jest": "^24.8.0",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.8.0",
