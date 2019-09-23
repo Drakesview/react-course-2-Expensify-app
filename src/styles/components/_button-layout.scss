@@ -1,9 +1,20 @@
 .button-layout {
     color: white;
+    display: inline-block;
     background: $blue;
     border:none;
     font-size: $font-size-large;
     font-weight: 300;
+    line-height: 1;
     padding: $s-size;
     margin-top:$s-size; 
+    text-decoration: none;
+}
+
+.button-layout--link {
+    background:none;
+}
+
+.button-layout--secondary {
+    background: #888888
 }
